@@ -1,0 +1,8 @@
+package me.cortex.LSD.Tokenizer;
+
+public class Token {
+	
+	private String token;
+	private TokenType type;
+
+}

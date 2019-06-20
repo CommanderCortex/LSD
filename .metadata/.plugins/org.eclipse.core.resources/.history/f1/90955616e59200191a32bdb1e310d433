@@ -1,0 +1,4 @@
+class HelloWorld
+	
+	method Main requires ()
+		print "hello"

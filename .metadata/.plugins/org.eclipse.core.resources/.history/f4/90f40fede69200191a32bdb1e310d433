@@ -1,0 +1,15 @@
+package me.cortex.LSD.Tokenizer;
+
+public enum TokenType {
+	
+	
+	// Example ( ) =
+	TOKEN,
+	
+	IDENTIFIER,
+	
+	INTEGER_LITERAL,
+	
+	STRING_LITERAL,
+
+}

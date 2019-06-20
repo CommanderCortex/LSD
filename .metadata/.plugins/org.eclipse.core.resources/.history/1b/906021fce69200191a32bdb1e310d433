@@ -1,0 +1,16 @@
+package me.cortex.LSD.Tokenizer;
+
+public enum TokenType {
+	
+	
+	// Example ( ) =
+	TOKEN,
+	
+	//Letter followed by, letters and or numbers.
+	IDENTIFIER,
+	
+	INTEGER_LITERAL,
+	
+	STRING_LITERAL,
+
+}

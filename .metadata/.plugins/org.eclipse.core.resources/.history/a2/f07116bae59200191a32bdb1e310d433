@@ -1,0 +1,10 @@
+class Variables 
+
+	method main requires ()
+		string str = getString()
+		printString(str)
+	
+	method printString requires (String str)
+	
+	method getString requires () String string
+		

@@ -1,0 +1,5 @@
+package me.cortex.LSD;
+
+public enum TokenType {
+
+}

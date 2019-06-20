@@ -1,0 +1,9 @@
+package me.cortex.LSD;
+
+import java.util.ArrayList;
+
+public class Block {
+	
+	private Block superBlock;	
+	private ArrayList<superBlock> subBlocks;
+}
