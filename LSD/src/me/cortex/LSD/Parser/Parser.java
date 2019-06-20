@@ -1,6 +1,6 @@
 package me.cortex.LSD.Parser;
 
-import me.cortex.LSD.Block;
+import me.cortex.LSD.Block.Block;
 import me.cortex.LSD.Tokenizer.Tokenizer;
 
 public abstract class Parser<T extends Block> {

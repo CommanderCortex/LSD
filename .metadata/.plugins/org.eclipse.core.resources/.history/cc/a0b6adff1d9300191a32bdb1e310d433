@@ -1,0 +1,5 @@
+package me.cortex.LSD.Block;
+
+public class Method extends Block{
+
+}

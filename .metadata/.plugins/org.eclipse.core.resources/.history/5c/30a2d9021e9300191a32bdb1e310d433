@@ -1,0 +1,10 @@
+package me.cortex.LSD.Block;
+
+public class Method extends Block {
+
+	public Method(Block superBlock) {
+		super(superBlock);
+		// TODO Auto-generated constructor stub
+	}
+
+}

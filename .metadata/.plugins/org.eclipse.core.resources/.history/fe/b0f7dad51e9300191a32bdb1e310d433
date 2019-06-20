@@ -1,0 +1,11 @@
+package me.cortex.LSD;
+
+public class Value {
+	
+	private Object value;
+	
+	public Object getVaule() {
+		return value;
+	}
+
+}

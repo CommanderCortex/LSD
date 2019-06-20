@@ -1,0 +1,10 @@
+package me.cortex.LSD.Block;
+
+public class Class extends Block {
+
+	public Class(Block superBlock) {
+		super(null);
+	}
+
+	
+}

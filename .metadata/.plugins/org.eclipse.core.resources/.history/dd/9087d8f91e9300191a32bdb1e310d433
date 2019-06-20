@@ -1,0 +1,15 @@
+package me.cortex.LSD;
+
+public class Value {
+	
+	private Object value;
+	
+	public Object getVaule() {
+		return value;
+	}
+	
+	public void setValue(Object value) {
+		this.value = value;
+	}
+
+}

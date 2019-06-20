@@ -1,10 +1,10 @@
 class Variables 
 
-	method main requires ()
+	method main requires () returns void
 		string str = getString()
 		printString(str)
 	
-	method printString requires (String str)
+	method printString requires (String str) returns void
 		print str
 	
 	method getString requires () String string

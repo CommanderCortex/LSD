@@ -1,0 +1,8 @@
+package me.cortex.LSD;
+
+public class Parameter {
+	
+	private String name;
+	private Type type;
+
+}

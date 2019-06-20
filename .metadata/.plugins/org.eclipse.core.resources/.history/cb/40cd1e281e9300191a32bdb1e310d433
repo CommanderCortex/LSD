@@ -1,0 +1,21 @@
+package me.cortex.LSD.Block;
+
+public class Method extends Block {
+	
+	private String name;
+	private type Type;
+
+	public Method(Block superBlock) {
+		super(superBlock);
+		
+	}
+	
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
