@@ -14,7 +14,7 @@ public class Value {
 		return type;
 	}
 	
-	public Object getVaule() {
+	public Object getValue() {
 		return value;
 	}
 	

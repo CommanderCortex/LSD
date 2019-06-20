@@ -1,0 +1,19 @@
+package me.cortex.LSD.Parser;
+
+import me.cortex.LSD.Block.Block;
+import me.cortex.LSD.Tokenizer.Tokenizer;
+
+public class VariableParser extends Parser<Block> {
+
+	@Override
+	public boolean shouldParse(String line) {
+		return line.matches("var [a-zA-Z]");
+	}
+
+	@Override
+	public Block parse(Block superBlock, Tokenizer tokenizer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

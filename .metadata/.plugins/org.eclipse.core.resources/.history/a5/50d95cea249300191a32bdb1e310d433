@@ -1,0 +1,5 @@
+package me.cortex.LSD.Parser;
+
+public class VariableParser extends Parser {
+
+}

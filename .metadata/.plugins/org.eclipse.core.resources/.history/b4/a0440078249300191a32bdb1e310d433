@@ -1,0 +1,15 @@
+package me.cortex.LSD;
+
+import me.cortex.LSD.Block.Block;
+
+public class Variable extends Value{
+
+	private Block block;
+	private String name;
+
+	public Variable(Block block, Type type, String name, Object value) {
+		
+		
+	}
+
+}
