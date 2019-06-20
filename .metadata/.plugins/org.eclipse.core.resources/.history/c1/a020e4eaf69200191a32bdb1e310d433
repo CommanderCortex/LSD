@@ -2,7 +2,7 @@ package me.cortex.LSD;
 
 import java.util.ArrayList;
 
-public abstract class Block {
+public class Block {
 	
 	private Block superBlock;	
 	private ArrayList<Block> subBlocks;
@@ -16,11 +16,6 @@ public abstract class Block {
 		return superBlock;
 	}
 	
-	public void addBlock(Block block) {
-		subBlocks.add(block);
-	}
-	
-	public abstract void run();
 	
 }
 

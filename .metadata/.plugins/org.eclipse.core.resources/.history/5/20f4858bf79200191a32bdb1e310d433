@@ -1,0 +1,9 @@
+package me.cortex.LSD.Parser;
+
+public abstract class Parser<T extends Block> {
+	
+	public abstract boolean shouldParse(String line);
+	
+	public 
+
+}

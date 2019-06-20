@@ -17,7 +17,7 @@ public abstract class Block {
 	}
 	
 	public void addBlock(Block block) {
-		subBlocks.add(block);
+		
 	}
 	
 	public abstract void run();

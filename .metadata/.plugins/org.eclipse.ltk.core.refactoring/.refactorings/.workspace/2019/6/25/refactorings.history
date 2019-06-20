@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;LSD/src/me/cortex/LSD/Tokenizer/Parser&apos;" deleteContents="false" description="Delete resource &apos;LSD/src/me/cortex/LSD/Tokenizer/Parser&apos;" element1="/LSD/src/me/cortex/LSD/Tokenizer/Parser" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1560992638302"/>
+</session>
