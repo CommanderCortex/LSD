@@ -36,7 +36,7 @@ public class Tokenizer {
 			return lastToken;
 		}
 		if (str.isEmpty()) {
-			return (lastToken = new Token("", TokenType.EMPTY, TokenDatas));
+			return (lastToken = new Token("", TokenType.EMPTY));
 		}
 		
 		for(TokenData data : TokenDatas) {
@@ -47,9 +47,9 @@ public class Tokenizer {
 				str = matcher.replaceFirst("");
 				
 				if (data.getType() == TokenType.STRING_LITERAL) {
-					return (lastToken = new Token(token.substring(1, token.length() - 1), TokenType.STRING_LITERAL, data));
+					return (lastToken = new Token(token.substring(1, token.length() - 1), TokenType.STRING_LITERAL));
 				} else {
-					return(lastToken = new Token(token, data.getType(), data));
+					return(lastToken = new Token(token, data.getType()));
 				}
 			}
 		}
