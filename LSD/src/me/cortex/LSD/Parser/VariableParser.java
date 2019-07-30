@@ -21,6 +21,10 @@ public class VariableParser extends Parser<Block> {
 				
 		Type type = Type.valueOf(tokenizer.nextToken().getToken().toUpperCase());	
 		
+		if(type == Type.VOID) {
+			throw new IllegalStateException("Cannot Declare Varaible of type void");
+		}
+		
 		String name = tokenizer.nextToken().getToken();
 		
 		tokenizer.nextToken();

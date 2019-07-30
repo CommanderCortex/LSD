@@ -20,6 +20,10 @@ public abstract class Block {
 		return superBlock;
 	}
 	
+	public Block[] getSubBlocks() {
+		return subBlocks.toArray(new Block[subBlocks.size()]);
+	}
+	
 	public void addBlock(Block block) {
 		subBlocks.add(block);
 	}
