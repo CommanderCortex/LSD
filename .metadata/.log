@@ -2792,3 +2792,9 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to fin
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-07-30 16:05:08.356
 !MESSAGE No repository found at http://download.eclipse.org/recommenders/updates/stable/.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-07-31 11:40:45.477
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-07-31 11:40:45.486
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

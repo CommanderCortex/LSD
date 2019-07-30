@@ -26,9 +26,11 @@ public class Method extends Block {
 		invoke();
 	}
 	
+	String ParamValues = "Wrong Number Of Values For Params";
+	
 	public Value invoke(Value... values) {
 		if(values.length != params.length) {
-			throw new IllegalArgumentException("Wrong Number Of Values For Params");
+			throw new IllegalArgumentException(ParamValues);
 		}
 		for (int i = 0; i < values.length && i < params.length; i++) {
 			Parameter p = params[i];
