@@ -2,7 +2,7 @@
 Letter followed by, letters and or numbers.
 
 <type>:
-A primitive type: String, Int, Boolean
+A primitive type: String, Integer, Boolean
 
 <value>:
 Identifier, Variable || Literal (1, "Hello", True)
