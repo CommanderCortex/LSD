@@ -1,18 +1,18 @@
 package me.cortex.LSD.Block;
 
 import me.cortex.LSD.Parameter;
-import me.cortex.LSD.Type;
+import me.cortex.LSD.BuiltInType;
 import me.cortex.LSD.Value;
 import me.cortex.LSD.Variable;
 
 public class Method extends Block {
 	
 	private String name;
-	private Type type;
+	private BuiltInType type;
 	private Parameter[] params;
 	private Value returnValue;
 
-	public Method(Block superBlock, String name, Type type, Parameter[] params) {
+	public Method(Block superBlock, String name, BuiltInType type, Parameter[] params) {
 		super(superBlock);
 		
 		this.name = name;
@@ -49,7 +49,7 @@ public class Method extends Block {
 				break;
 			}
 		}
-		if(returnValue == null && type != Type.VOID) {
+		if(returnValue == null && type != BuiltInType.VOID) {
 			throw new IllegalStateException("Expected Return Value");
 		}
 		

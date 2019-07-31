@@ -1,5 +1,6 @@
 package me.cortex.LSD.Parser;
 
+import me.cortex.LSD.BuiltInType;
 import me.cortex.LSD.Type;
 import me.cortex.LSD.Variable;
 import me.cortex.LSD.Block.Block;
@@ -19,9 +20,9 @@ public class VariableParser extends Parser<Block> {
 	public Block parse(Block superBlock, Tokenizer tokenizer) {
 		tokenizer.nextToken();
 				
-		Type type = Type.valueOf(tokenizer.nextToken().getToken().toUpperCase());	
+		String type = tokenizer.nextToken().getToken();	
 		
-		if(type == Type.VOID) {
+		if(type == BuiltInType.VOID) {
 			throw new IllegalStateException("Cannot Declare Varaible of type void");
 		}
 		

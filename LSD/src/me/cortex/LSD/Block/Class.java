@@ -1,6 +1,8 @@
 package me.cortex.LSD.Block;
 
-public class Class extends Block {
+import me.cortex.LSD.Type;
+
+public class Class extends Block implements Type {
 	
 	private String name;
 

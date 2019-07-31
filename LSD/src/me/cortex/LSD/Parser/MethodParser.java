@@ -3,7 +3,7 @@ package me.cortex.LSD.Parser;
 import java.util.ArrayList;
 
 import me.cortex.LSD.Parameter;
-import me.cortex.LSD.Type;
+import me.cortex.LSD.BuiltInType;
 import me.cortex.LSD.Block.Block;
 import me.cortex.LSD.Block.Method;
 import me.cortex.LSD.Tokenizer.Token;
@@ -43,7 +43,7 @@ public class MethodParser extends Parser<Method>{
 
 				else {
 					ParamData[1] = token.getToken();
-					params.add(new Parameter(Type.valueOf(ParamData[0].toUpperCase()), ParamData[1]));
+					params.add(new Parameter(BuiltInType.valueOf(ParamData[0].toUpperCase()), ParamData[1]));
 					ParamData = new String[2];
 
 				}
@@ -52,7 +52,7 @@ public class MethodParser extends Parser<Method>{
 		
 		tokenizer.nextToken();
 		
-		Type returnType = Type.valueOf(tokenizer.nextToken().getToken().toUpperCase());
+		BuiltInType returnType = BuiltInType.valueOf(tokenizer.nextToken().getToken().toUpperCase());
 		
 		return new Method(superBlock, name, returnType, params.toArray(new Parameter[params.size()]));
 	}
