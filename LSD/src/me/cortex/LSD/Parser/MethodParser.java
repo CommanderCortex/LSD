@@ -52,7 +52,7 @@ public class MethodParser extends Parser<Method>{
 		
 		tokenizer.nextToken();
 		
-		BuiltInType returnType = BuiltInType.valueOf(tokenizer.nextToken().getToken().toUpperCase());
+		String returnType = tokenizer.nextToken().getToken();
 		
 		return new Method(superBlock, name, returnType, params.toArray(new Parameter[params.size()]));
 	}

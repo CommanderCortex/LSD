@@ -2,15 +2,15 @@ package me.cortex.LSD;
 
 public class Value {
 	
-	private BuiltInType type;
+	private Type type;
 	private Object value;
 	
-	public Value(BuiltInType type, Object value) {
-		this.type = type;
+	public Value(Type type2, Object value) {
+		this.type = type2;
 		this.value = value;
 	}
 	
-	public BuiltInType getType() {
+	public Type getType() {
 		return type;
 	}
 	

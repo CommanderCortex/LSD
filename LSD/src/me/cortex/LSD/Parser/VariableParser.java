@@ -1,9 +1,7 @@
 package me.cortex.LSD.Parser;
 
-import me.cortex.LSD.BuiltInType;
-import me.cortex.LSD.Type;
-import me.cortex.LSD.Variable;
 import me.cortex.LSD.Block.Block;
+import me.cortex.LSD.Block.VariableBlock;
 import me.cortex.LSD.Tokenizer.Token;
 import me.cortex.LSD.Tokenizer.TokenType;
 import me.cortex.LSD.Tokenizer.Tokenizer;
@@ -21,11 +19,7 @@ public class VariableParser extends Parser<Block> {
 		tokenizer.nextToken();
 				
 		String type = tokenizer.nextToken().getToken();	
-		
-		if(type == BuiltInType.VOID) {
-			throw new IllegalStateException("Cannot Declare Varaible of type void");
-		}
-		
+			
 		String name = tokenizer.nextToken().getToken();
 		
 		tokenizer.nextToken();
@@ -43,7 +37,7 @@ public class VariableParser extends Parser<Block> {
 		else {
 			value = superBlock.getVariable(v.getToken()); //Get Value??
 		}
-		superBlock.addVariable(new Variable(superBlock, type, name, value));
-		return null;
+		
+		return new VariableBlock(superBlock, type, name, value);
 	}
 }

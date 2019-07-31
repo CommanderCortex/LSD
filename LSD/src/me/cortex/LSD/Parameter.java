@@ -3,9 +3,9 @@ package me.cortex.LSD;
 public class Parameter {
 	
 	private String name;
-	private BuiltInType type;
+	private Type type;
 	
-	public Parameter(BuiltInType type, String name) {
+	public Parameter(Type type, String name) {
 		this.type = type;
 		this.name = name;
 	}
@@ -15,7 +15,7 @@ public class Parameter {
 		
 	}
 
-	public BuiltInType getType() {
+	public Type getType() {
 		return type;
 	}
 }
