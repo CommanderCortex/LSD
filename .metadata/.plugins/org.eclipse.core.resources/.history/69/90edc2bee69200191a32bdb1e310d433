@@ -1,9 +1,0 @@
-package me.cortex.LSD.Tokenizer;
-
-public enum TokenType {
-	
-	TOKEN,
-	IDENTIFIER,
-	STRING_LITERAL,
-
-}

@@ -1,9 +1,0 @@
-package me.cortex.LSD;
-
-public class Variable extends Value{
-
-	public Variable(Type type, Object value) {
-		super(type, value);
-	}
-
-}

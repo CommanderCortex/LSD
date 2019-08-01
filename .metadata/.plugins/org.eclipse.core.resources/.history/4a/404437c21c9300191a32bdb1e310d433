@@ -1,7 +1,0 @@
-package me.cortex.LSD.Parser;
-
-import me.cortex.LSD.Block.Class;
-
-public class ClassParser extends Parser<Class> {
-
-}

@@ -1,9 +1,0 @@
-package me.cortex.LSD.Tokenizer;
-
-import java.util.ArrayList;
-
-public class Tokenizer {
-	
-	private ArrayList<TokenData> TokenData;
-
-}

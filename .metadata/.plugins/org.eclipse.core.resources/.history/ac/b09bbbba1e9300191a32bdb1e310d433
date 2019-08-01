@@ -1,7 +1,0 @@
-package me.cortex.LSD;
-
-public class Value {
-	
-	private Object value;
-
-}

@@ -1,8 +1,0 @@
-class Variables 
-
-	method main requires ()
-	
-	method printString requires (String str)
-	
-	method getString requires () String string
-		

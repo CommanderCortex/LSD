@@ -1,5 +1,8 @@
 package me.cortex.LSD.Block;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 import me.cortex.LSD.BuiltInType;
 import me.cortex.LSD.Parameter;
 import me.cortex.LSD.Type;
@@ -40,8 +43,11 @@ public class Method extends Block {
 	String ParamValues = "Wrong Number Of Values For Params";
 	
 	public Value invoke(Value... values) {
+		
 		Type t = Type.match(type);
 		
+		//System.out.println("Output: " + name + " Returns " + t + " Required Params: " + Arrays.toString(params));
+			
 		if(values.length != params.length) {
 			throw new IllegalArgumentException(ParamValues);
 		}

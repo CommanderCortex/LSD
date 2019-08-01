@@ -1,7 +1,0 @@
-package me.cortex.LSD.Parser;
-
-public abstract class Parser {
-	
-	
-
-}

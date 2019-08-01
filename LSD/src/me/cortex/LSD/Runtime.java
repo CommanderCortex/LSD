@@ -18,12 +18,22 @@ public class Runtime {
 	public Runtime() {
 		this.classes = new ArrayList<Class>();
 		
-		String code = "class HelloWorld" + "\n" + 
-				"method main requires () returns void";
-
+		String code = "class Variables \n" + 
+				"\n" + 
+				"	method main requires () returns void\n" + 
+				"		string str = getString()\n" + 
+				"		printString(str)\n" + 
+				"	\n" + 
+				"	method printString requires (String str) returns void\n" + 
+				"		print str\n" + 
+				"	\n" + 
+				"	method getString requires () String string\n" + 
+				"		return \"Hello\"\n" + 
+				"		"; 
+				
 		Parser<?>[] parsers = new Parser<?>[] { new ClassParser(), new MethodParser(), new VariableParser() };
 
-		Class main;
+		Class main = null;
 		
 		Block block = null;
 		
@@ -36,12 +46,17 @@ public class Runtime {
 				
 			for (Parser<?> parser : parsers) {
 				if (parser.shouldParse(line)) {
-					block = parser.parse(block, tokenizer);
+					Block newBlock = parser.parse(block, tokenizer);
 					
-					if (block instanceof Class) {
-						classes.add((Class) block);
+					if (newBlock instanceof Class) {
+						classes.add((Class) newBlock);
 					}
 					
+					else  {
+						block.addBlock(newBlock);
+					}
+					
+					block = newBlock;
 					success = true;
 					break;
 				}
@@ -54,6 +69,7 @@ public class Runtime {
 		
 		for (Class c : classes) {
 			for(Block b : c.getSubBlocks()) {
+				//System.out.println("Found Block " + b.getClass().getSimpleName());
 				if(b instanceof Method) {
 					Method method = (Method) b;
 					if(method.getName().equals("main") && method.getType().equals("void") && method.getParameters().length == 0) {
@@ -62,8 +78,18 @@ public class Runtime {
 				}
 			}
 		}
-	}
+		if(main == null) {
+			throw new IllegalStateException("No Main Method Found");
+		}
 	
+		main.run();
+		
+		//System.out.println("Main CLass: " + main.getName());
+	}
+	private String toString(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	public static void main(String[] args) {
 		new Runtime();
 	}
