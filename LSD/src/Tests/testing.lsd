@@ -1,0 +1,23 @@
++ <CPP> 
++ <JAVA>
+
+class testing
+
+	method main requires () returns void
+		getTestResult
+	
+	method getTestResut requires ()
+		return JAVA.runTest();
+	
+
+	<JAVA = TRUE>
+		 
+		 public void runTest(test t) {
+				if(t = true){
+					system.out.println("Testing Complete");
+				} else {
+					return false;
+				}
+			}
+			
+	<JAVA = FALSE>		

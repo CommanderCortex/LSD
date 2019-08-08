@@ -86,6 +86,7 @@ public class Runtime {
 		
 		//System.out.println("Main CLass: " + main.getName());
 	}
+	@SuppressWarnings("unused")
 	private String toString(String string) {
 		// TODO Auto-generated method stub
 		return null;

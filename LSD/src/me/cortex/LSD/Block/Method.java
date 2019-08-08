@@ -1,8 +1,5 @@
 package me.cortex.LSD.Block;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 import me.cortex.LSD.BuiltInType;
 import me.cortex.LSD.Parameter;
 import me.cortex.LSD.Type;

@@ -2,11 +2,11 @@ class Variables
 
 	method main requires () returns void
 		string str = getString()
-		printString(str)
+		print String(str)
 	
 	method printString requires (String str) returns void
 		print str
 	
 	method getString requires () String string
 		return "Hello"
-		
+		 
