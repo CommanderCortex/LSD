@@ -24,3 +24,6 @@ Print Statement:
 
 Return Statement:
 'return <value>'
+
+Invoking Another Language (Must Be In The BackEnd Code)
+'+<LANGUAGE-NAME>'
