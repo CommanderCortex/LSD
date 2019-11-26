@@ -14,7 +14,7 @@ class testing
 		 
 		 public void runTest(test t) {
 				if(t = true){
-					system.out.println("Testing Complete");
+					System.out.println("Testing Complete");
 				} else {
 					return false;
 				}
