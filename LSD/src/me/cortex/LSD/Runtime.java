@@ -81,7 +81,7 @@ public class Runtime {
 		if(main == null) {
 			throw new IllegalStateException("No Main Method Found");
 		}
-	
+
 		main.run();
 		
 		//System.out.println("Main CLass: " + main.getName());
