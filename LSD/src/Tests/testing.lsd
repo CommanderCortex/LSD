@@ -1,10 +1,11 @@
 + <CPP> 
 + <JAVA>
 
+
 class testing
 
-	method main requires () returns void
-		getTestResult
+	method main requires (sudo, s) returns void
+		s.getTestResult
 	
 	method getTestResut requires ()
 		return JAVA.runTest();

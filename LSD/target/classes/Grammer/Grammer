@@ -27,3 +27,13 @@ Return Statement:
 
 Invoking Another Language (Must Be In The BackEnd Code)
 '+<LANGUAGE-NAME>'
+
+Test for permission 
+'testfor <system-permission>'
+
+Override function for Windows System Permissions 
+'winoverride <permission to override>'
+
+Request Sudo Permissions for Mac & Linux 
+'sudo <Permission>' (Leave Blank for *)
+
