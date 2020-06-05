@@ -4,11 +4,11 @@
 
 class testing
 
-	method main requires (sudo, s) returns void
-		s.getTestResult
+	method main requires () returns void
+		getTestResult(s)
 	
-	method getTestResut requires ()
-		return JAVA.runTest();
+	method getTestResut requires (sudo, s)
+		return s JAVA.runTest();
 	
 
 	<JAVA = TRUE>
