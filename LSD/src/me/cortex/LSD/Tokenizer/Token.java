@@ -5,12 +5,13 @@ public class Token {
 	private String token;
 	private TokenType type;
 	private Object value;
-
+	private PermmissionFunction permFunc;
 	
-	public Token(String token, TokenType type, Object value) {
+	public Token(String token, TokenType type, Object value, PermmissionFunction perms) {
 		this.token = token;
 		this.type = type;
 		this.value = value;
+		this.setPermFunc(perms);
 
 	}
 	
@@ -24,6 +25,14 @@ public class Token {
 	
 	public TokenType getType() {
 		return type;
+	}
+
+	public PermmissionFunction getPermFunc() {
+		return permFunc;
+	}
+
+	public void setPermFunc(PermmissionFunction permFunc) {
+		this.permFunc = permFunc;
 	}
 	
 }
