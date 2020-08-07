@@ -1,5 +1,6 @@
 + <CPP> 
 + <JAVA>
++ <PY>
 
 
 class testing
@@ -22,3 +23,9 @@ class testing
 			}
 			
 	<JAVA = FALSE>	
+	
+	<PY = TRUE>
+			
+			print("TESTOUTPUT")
+	
+	<PY = FALSE>

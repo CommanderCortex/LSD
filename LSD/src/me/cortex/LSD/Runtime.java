@@ -1,5 +1,6 @@
 package me.cortex.LSD;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import me.cortex.LSD.Block.Block;
@@ -18,18 +19,17 @@ public class Runtime {
 	public Runtime() {
 		this.classes = new ArrayList<Class>();
 		
-		String code = "class Variables \n" + 
-				"\n" + 
-				"	method main requires () returns void\n" + 
-				"		string str = getString()\n" + 
-				"		printString(str)\n" + 
-				"	\n" + 
-				"	method printString requires (String str) returns void\n" + 
-				"		print str\n" + 
-				"	\n" + 
-				"	method getString requires () String string\n" + 
-				"		return \"Hello\"\n" + 
-				"		"; 
+		/*
+		 * String code = "class Variables \n" + "\n" +
+		 * "	method main requires () returns void\n" +
+		 * "		string str = getString()\n" + "		printString(str)\n" + "	\n" +
+		 * "	method printString requires (String str) returns void\n" +
+		 * "		print str\n" + "	\n" +
+		 * "	method getString requires () String string\n" +
+		 * "		return \"Hello\"\n" + "		";
+		 */
+		
+		String code = File.listRoots()[1].getName();
 				
 		Parser<?>[] parsers = new Parser<?>[] { new ClassParser(), new MethodParser(), new VariableParser() };
 

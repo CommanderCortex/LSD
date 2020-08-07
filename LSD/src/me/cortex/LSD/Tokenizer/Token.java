@@ -1,5 +1,7 @@
 package me.cortex.LSD.Tokenizer;
 
+import java.util.ArrayList;
+
 public class Token {
 	
 	private String token;
@@ -15,6 +17,14 @@ public class Token {
 
 	}
 	
+	public Token(String string, TokenType empty, ArrayList<TokenData> tokenDatas) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Token(String substring, TokenType stringLiteral, TokenData data) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getToken() {
 		return token;
 	}

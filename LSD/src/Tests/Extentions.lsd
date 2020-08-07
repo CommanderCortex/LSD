@@ -25,10 +25,10 @@ class Extentions calls on "CORTEX.ASM"
 		    mov bp, sp
 		    pusha
 		
-		    mov ah, 0x07        
+		    mov ah, 0x07       
 		    mov al, 0x00        
 		    mov bh, 0x07        
-		    mov cx, 0x00       
+		    mov cx, 0x00        
 		    mov dh, 0x18      
 		    mov dl, 0x4f       
 		    int 0x10            
